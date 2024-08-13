@@ -11,22 +11,22 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #333;
+            background-color: #2C2C2C;
             font-family: 'Arial', sans-serif;
         }
         .card {
             width: 90mm;
             height: 54mm;
-            background: linear-gradient(145deg, #1c1c1c, #0d0d0d);
-            border: 2px solid #C7A252; /* طلایی شبیه به سایت */
+            background: linear-gradient(145deg, #0D0D0D, #2C2C2C, #C7A252, #FFD700);
+            border: 2px solid #FFD700; /* طلایی روشن برای حاشیه */
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 10px;
-            color: #C7A252; /* طلایی شبیه به سایت */
+            color: #FFD700; /* طلایی روشن برای متن */
             position: relative;
             overflow: hidden;
         }
@@ -37,24 +37,28 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(199, 162, 82, 0.1); /* افکت درخشش طلایی */
+            background: rgba(255, 215, 0, 0.1); /* افکت نور طلایی */
             clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+            z-index: 1;
         }
         .name {
             font-size: 1.8em;
             font-weight: bold;
             margin-bottom: 0.3em;
+            z-index: 2;
         }
         .job-title {
             font-size: 1.1em;
             font-weight: bold;
             margin-bottom: 0.5em;
             text-align: center;
+            z-index: 2;
         }
         .contact-info {
             font-size: 0.9em;
             text-align: center;
             line-height: 1.5em;
+            z-index: 2;
         }
     </style>
 </head>
